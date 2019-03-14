@@ -18,7 +18,7 @@
 				android:minWidth="30px"
 				android:minHeight="30px"
 				xmlns:p4="http://xamarin.com/mono/android/designer"
-				android:id="@+id/tvText1" />
+				android:id="@+id/textview1" />
 			<SeekBar
 				android:layout_column="1"
 				android:id="@+id/seekBar1"
@@ -29,7 +29,7 @@
 				android:minWidth="30px"
 				android:minHeight="30px"
 				xmlns:p4="http://xamarin.com/mono/android/designer"
-				android:id="@+id/textView1" />
+				android:id="@+id/tvT1" />
 		</TableRow>
 
 		<TableRow
@@ -40,7 +40,7 @@
 				android:minWidth="30px"
 				android:minHeight="30px"
 				xmlns:p4="http://xamarin.com/mono/android/designer"
-				android:id="@+id/tvText2" />
+				android:id="@+id/textview2" />
 			<SeekBar
 				android:layout_column="1"
 				android:id="@+id/seekBar2"
@@ -50,7 +50,7 @@
 				android:minWidth="30px"
 				android:minHeight="30px"
 				xmlns:p4="http://xamarin.com/mono/android/designer"
-				android:id="@+id/textView2" />
+				android:id="@+id/tvT2" />
 		</TableRow>
 
 		<TableRow
@@ -61,7 +61,7 @@
 				android:minWidth="30px"
 				android:minHeight="30px"
 				xmlns:p4="http://xamarin.com/mono/android/designer"
-				android:id="@+id/tvFinal" />
+				android:id="@+id/textview3" />
 			<SeekBar
 				android:layout_column="1"
 				android:id="@+id/seekBar3"
@@ -71,7 +71,7 @@
 				android:minWidth="30px"
 				android:minHeight="30px"
 				xmlns:p4="http://xamarin.com/mono/android/designer"
-				android:id="@+id/textView3" />
+				android:id="@+id/tvFinal" />
 		</TableRow>
 
 		<TableRow
@@ -95,15 +95,15 @@
 		<TableRow
 			android:id="@+id/tableRow5">
 			<Button
-				android:text="Button"
+				android:text="Total"
 				android:layout_column="0"
-				android:id="@+id/button1" />
+				android:id="@+id/btnTotal" />
 			<TextView
 				p4:placeholder="true"
 				android:minWidth="30px"
 				android:minHeight="30px"
 				xmlns:p4="http://xamarin.com/mono/android/designer"
-				android:id="@+id/tvFinal" />
+				android:id="@+id/tvTotal" />
 		</TableRow>
 		
 	</TableLayout>
