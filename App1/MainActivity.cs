@@ -13,16 +13,40 @@ namespace App1
     public class MainActivity : AppCompatActivity
     {
 
+        TextView T1tv, T2tv, finaltv;
+        SeekBar T1sb, T2sb, T3sb;
+        Button totalBtn;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
-            SetSupportActionBar(toolbar);
+            T1tv = (TextView)FindViewById(Resource.Id.tvText1);
+            T2tv = (TextView)FindViewById(Resource.Id.tvText2);
+            finaltv = (TextView)FindViewById(Resource.Id.tvFinal);
+            T1sb = (SeekBar)FindViewById(Resource.Id.seekBar1);
+            T2sb = (SeekBar)FindViewById(Resource.Id.seekBar2);
+            T3sb = (SeekBar)FindViewById(Resource.Id.seekBar3);
+            totalBtn = (Button)FindViewById(Resource.Id.tvFinal);
 
-            FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
-            fab.Click += FabOnClick;
+
+            T1sb.ProgressChanged += delegate
+            {
+                T1tv.Text = T1sb.Progress.ToString();
+            };
+
+            T2sb.ProgressChanged += delegate
+            {
+                T2tv.Text = T2sb.Progress.ToString();
+            };
+
+            finaltv.ProgressChanged += delegate
+            {
+                T1tv.Text = T1sb.Progress.ToString();
+            };
+
+
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
